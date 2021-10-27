@@ -1,10 +1,11 @@
 import tkinter
+from tkinter.constants import BOTH, X
 
 root = tkinter.Tk()
 
 # GUI Logic
 
-root.geometry("640x480")
+root.geometry("1200x900")
 
 root.minsize(640,480)
 
@@ -22,7 +23,7 @@ h1.pack()
 
 bat = tkinter.PhotoImage(file="bat.png")
 image = tkinter.Label(image= bat)
-image.pack()
+image.pack(fill=BOTH)
 
 # This mainloop should remain at the end
 
